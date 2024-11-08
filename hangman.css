@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f8f9fa;
+    color: #004085;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #004085;
+}
+
+/* Game Container */
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Masked Word Display */
+#word {
+    font-size: 2rem;
+    letter-spacing: 8px;
+    font-weight: bold;
+    color: #004085;
+    margin-bottom: 20px;
+}
+
+/* Guess Box Styling */
+#guessBox {
+    font-size: 1.2rem;
+    padding: 8px;
+    margin-top: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+#guessBox.win {
+    color: #004085;
+    background-color: #cce5ff;
+    font-weight: bold;
+}
+
+#guessBox.loss {
+    color: #722bac1a;
+    background-color: #f8d7da;
+    font-weight: bold;
+}
+
+/* Hangman Image */
+#hangmanImage {
+    width: 100px;
+    height: 150px;
+    margin: 20px 0;
+}
+
+/* Guesses Section */
+#guesses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #e2e3e5;
+    border-radius: 8px;
+}
+
+/* Individual Guess Letters */
+.guess {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    color: #004085;
+    background-color: #ffffff;
+    border: 1px solid #b8daff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.guess:hover {
+    background-color: #b8daff;
+}
+
+/* Buttons */
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+#guessWordButton {
+    background-color: #004085;
+}
+
+#newGameButton {
+    background-color: #0056b3;
+}
+
+button:hover {
+    background-color: #002752;
+}
+
+/* Win and Loss Styles */
+.win-message,
+.loss-message {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.win-message {
+    color: #004085;
+}
+
+.loss-message {
+    color: #d0b8bbc5;
+}
